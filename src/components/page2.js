@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 
-function SCart()
+//State
+
+function Cart()
 {
     let [Qty,setQty]=useState(0);
     let buy=() => 
@@ -29,4 +31,4 @@ function SCart()
    
 }
 
-export default SCart;
+export default Cart;

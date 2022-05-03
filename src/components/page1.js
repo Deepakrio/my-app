@@ -1,5 +1,7 @@
 import React from 'react'
 
+//Function Component
+
 export default function Page1(props) {
     return <div>
     <h3>{props.title}   </h3>

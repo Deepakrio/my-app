@@ -1,6 +1,8 @@
 import React from "react"
 import det1 from './details.json';
 
+//Retriving Json Files
+
 function Display()
 {
   const Display=det1.map(
