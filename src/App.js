@@ -5,6 +5,8 @@ import About from"./components/page1" ;
 import Page2 from"./components/page2" ;
 import Table from"./components/page3" ;
 import React, {useState} from 'react';
+import SCart from './components/page2';
+import ToReact from './components/page0';
 
 
 
@@ -17,18 +19,18 @@ function App() {
     <div className="App">
       <Router>
       <div className="list">
-  <ul>
-    <li><Link to="/">Home</Link></li>
-    <li><Link to="About">About</Link></li>
-    <li><Link to="page2">Page2</Link></li>
-    <li><Link to="Table">Details</Link></li>
+  
+    <Link to="/">Home</Link>
+    <Link to="About">About</Link>
+   <Link to="Scart">cart</Link>
+    <Link to="Table">Details</Link>
 
-  </ul>
+  
 </div>
   <Routes>
-  <Route exact path="/" element={<h1>Welcome To React</h1>} />
+  <Route exact path="/" element={<ToReact/> } />
     <Route exact path="About" element={<About title = 'Declarative' title2 = 'Component-Based' />} />
-    <Route exact path="page2" element={<Page2 />} />
+    <Route exact path="Scart" element={<SCart />} />
     <Route exact path="Table" element={<Table />} />
 
   </Routes>
