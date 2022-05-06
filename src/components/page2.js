@@ -11,7 +11,13 @@ function Cart()
     }
     let cancel=() => 
     {
-        setQty(Qty -1);
+    setQty(Qty -1);
+     if (Qty <= -1)
+     {
+         Qty =0;
+     }
+     
+  
     }
 
   
